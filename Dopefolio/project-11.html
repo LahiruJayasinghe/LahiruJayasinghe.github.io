@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Shopee video product detector</title>
+    <title>Malware Analysis</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <span href="../index.html" class="header__logo-sub">Lahiru Jayasinghe</span>
+          <span class="header__logo-sub">Lahiru Jayasinghe</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -63,10 +63,10 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Shopee video product detector</h1>
+        <h1 class="heading-primary">Malware Analysis</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            SHOPEE – SENIOR ALGORITHM ENGINEER
+            SUTD-MIT INTERNATIONAL DESIGN CENTRE – RESEARCH ENGINER
           </p>
         </div>
 
@@ -80,23 +80,23 @@
             <div class="project-details__desc">
               <h4 class="project-details__content-title">Project Overview</h4>
               <p class="project-details__desc-para">
-                The goal is to recognize the product that is being offered for sale within a video frame or image. This task is particularly challenging because the input image may contain multiple objects resembling products, and the objective is to pinpoint the exact product that is available for purchase.
+                Detect malware based on features extracted from the API calls
               </p>
               <h4 class="project-details__content-title">Solution</h4>
               <p class="project-details__desc-para">
-                Implement a genenic product detector to locate all objects resembling products within the image. 
-                Subsequently, employ these detection patches for conducting similarity matching with distinctive product attributes such as the title and cover image to identify the product on sale.
+                Utilize Edge-AI concepts, focusing on object detection, and model pruning to make it suitable for edge devices.
+              </p>
+              <h4 class="project-details__content-title">Data</h4>
+              <p class="project-details__desc-para">
+                The shape of each data sample is (LENGTH, FEATURES). It has 102 FEATURES, but the LENGTH is at most 1000 and it is not fixed. All the data is labeled as a binary classification
               </p>
               <h4 class="project-details__content-title">Work summary</h4>
               <ul class="project-details__desc-para">
-                <li>Developed and experimented with a generic product detector using YoloX model.</li>
-                <li>Developed a similarity matching model to identify the product-on-sale included in the video frames.</li>
-                <li>Performed data analytics and developed rule-based post-processing logics to improve results.</li>
-                <li>Explored the possibility of text-guided object detection (owlvit) to improve the precision of the detector.</li>
-                <li>Labelling SOPs and datasets preparation for data labelling tasks.</li>
-                <li>Concurrent parameter finetuning using Hyperopt for the post-processing logics.</li>
-                <li>Resource and timeline planning and setting up KPIs for quarterly model improvements.</li>
-                <li>Model deployment and model serving provide 200qps response rate.</li>
+                <li>Perform histogram analysis for the data sample LENGTH that helps to make it a fix length instead of padding them.</li>
+                <li>Perform data normalization and PCA using Scikit-Learn.</li>
+                <li>Implement a random sampling batch generator to balance out the classes in a batch to tackle class imbalance in data.</li>
+                <li>Implement a model with multi-layered GRU cells with dropout regularization and sigmoid function with binary cross-entropy as the loss function.</li>
+                <li>Model achieved ~98% accuracy in the public leaderboard and ~97% in the private leaderboard in Kaggle platform.</li>
               </ul>
               
             </div>
@@ -104,25 +104,22 @@
             <div class="project-details__tools-used">
               <h4 class="project-details__content-title">Tools</h4>
               <div class="skills">
-                <div class="skills__skill">Pytorch</div>
-                <div class="skills__skill">OpenCV</div>
-                <div class="skills__skill">Docker</div>
-                <div class="skills__skill">AWS</div>
-                <div class="skills__skill">Hadoop</div>
-                <div class="skills__skill">pyspark</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">Scikit-Learn</div>
                 <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Hyperopt</div>
               </div>
             </div>
 
             <div class="project-details__ML-used">
               <h4 class="project-details__content-title">ML approaches</h4>
               <div class="skills">
-                <div class="skills__skill">YoloX</div>
-                <div class="skills__skill">Metric learning</div>
-                <div class="skills__skill">Swin Transformer</div>
-                <div class="skills__skill">Post processing logics</div>
-                <div class="skills__skill">Text guided object detection (OWL-ViT)</div>
+                <div class="skills__skill">GRU</div>
+                <div class="skills__skill">XGBoost</div>
+                <div class="skills__skill">Histogram analysis</div>
+                <div class="skills__skill">PCA</div>
+                <div class="skills__skill">Regularization</div>
+                <div class="skills__skill">Sampling</div>
               </div>
             </div>
             

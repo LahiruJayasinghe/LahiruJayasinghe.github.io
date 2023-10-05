@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Shopee video product detector</title>
+    <title>Predictive maintenance system for industry 4.0</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <span href="../index.html" class="header__logo-sub">Lahiru Jayasinghe</span>
+          <span class="header__logo-sub">Lahiru Jayasinghe</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -63,10 +63,10 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Shopee video product detector</h1>
+        <h1 class="heading-primary">Predictive maintenance system for industry 4.0</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            SHOPEE – SENIOR ALGORITHM ENGINEER
+            SUTD-MIT INTERNATIONAL DESIGN CENTRE – RESEARCH ENGINER
           </p>
         </div>
 
@@ -80,23 +80,21 @@
             <div class="project-details__desc">
               <h4 class="project-details__content-title">Project Overview</h4>
               <p class="project-details__desc-para">
-                The goal is to recognize the product that is being offered for sale within a video frame or image. This task is particularly challenging because the input image may contain multiple objects resembling products, and the objective is to pinpoint the exact product that is available for purchase.
+                Industrial machinery naturally deteriorates over time, and repairing a faulty machine can be extremely expensive. To prevent such failures in advance, a monitoring system is essential. This system tracks the machinery's decay cycle and signals when maintenance is needed.
               </p>
               <h4 class="project-details__content-title">Solution</h4>
               <p class="project-details__desc-para">
-                Implement a genenic product detector to locate all objects resembling products within the image. 
-                Subsequently, employ these detection patches for conducting similarity matching with distinctive product attributes such as the title and cover image to identify the product on sale.
+                Implement an Remaining Useful Life (RUL) estimation model that continuously predicts the machine's RUL at each time step throughout its operational life. This solution has been successfully implemented and deployed for Keysight Technologies Singapore.
               </p>
               <h4 class="project-details__content-title">Work summary</h4>
               <ul class="project-details__desc-para">
-                <li>Developed and experimented with a generic product detector using YoloX model.</li>
-                <li>Developed a similarity matching model to identify the product-on-sale included in the video frames.</li>
-                <li>Performed data analytics and developed rule-based post-processing logics to improve results.</li>
-                <li>Explored the possibility of text-guided object detection (owlvit) to improve the precision of the detector.</li>
-                <li>Labelling SOPs and datasets preparation for data labelling tasks.</li>
-                <li>Concurrent parameter finetuning using Hyperopt for the post-processing logics.</li>
-                <li>Resource and timeline planning and setting up KPIs for quarterly model improvements.</li>
-                <li>Model deployment and model serving provide 200qps response rate.</li>
+                <li>Participated in customer meetings about the features and requirement of the project.</li>
+                <li>Data cleaning, normalizing, and visualizing on PCA/TSNE space using pandas and scikit-learn to identify inherent clusters and behaviors.</li>
+                <li>Implement anomaly detection pipeline using dimensional reduction and clustering (dbscan and kmeans).</li>
+                <li>Proof of concept (POC) model implementation using TensorFlow on similar online datasets by combining CNN and LSTM with data augmentations to predict RUL.</li>
+                <li>Train and evaluate the model on customer data while fine-tuning the hyperparameters.</li>
+                <li>Implement the deployment for the final solution (combining anomaly detection and fine-tuned model) as a Docker image for the project delivery.</li>
+                <li>Publish a research paper with Keysight Technologies about the new findings of the project in a flagship IEEE conference which can be found online <a href="https://arxiv.org/pdf/1810.05644.pdf" target="_blank">here</a>.</li>
               </ul>
               
             </div>
@@ -104,25 +102,28 @@
             <div class="project-details__tools-used">
               <h4 class="project-details__content-title">Tools</h4>
               <div class="skills">
-                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
                 <div class="skills__skill">OpenCV</div>
                 <div class="skills__skill">Docker</div>
                 <div class="skills__skill">AWS</div>
                 <div class="skills__skill">Hadoop</div>
                 <div class="skills__skill">pyspark</div>
                 <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Hyperopt</div>
               </div>
             </div>
 
             <div class="project-details__ML-used">
               <h4 class="project-details__content-title">ML approaches</h4>
               <div class="skills">
-                <div class="skills__skill">YoloX</div>
-                <div class="skills__skill">Metric learning</div>
-                <div class="skills__skill">Swin Transformer</div>
-                <div class="skills__skill">Post processing logics</div>
-                <div class="skills__skill">Text guided object detection (OWL-ViT)</div>
+                <div class="skills__skill">CNN</div>
+                <div class="skills__skill">LSTM</div>
+                <div class="skills__skill">Anomaly detection</div>
+                <div class="skills__skill">Kmeans</div>
+                <div class="skills__skill">DBScane</div>
+                <div class="skills__skill">PCA</div>
+                <div class="skills__skill">Kmeans</div>
+                <div class="skills__skill">NDCG</div>
               </div>
             </div>
             

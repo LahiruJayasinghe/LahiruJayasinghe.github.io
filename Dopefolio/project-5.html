@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Shopee video product detector</title>
+    <title>Unconsumed inflight meal tracking</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <span href="../index.html" class="header__logo-sub">Lahiru Jayasinghe</span>
+          <span class="header__logo-sub">Lahiru Jayasinghe</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -63,10 +63,10 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Shopee video product detector</h1>
+        <h1 class="heading-primary">Unconsumed inflight meal tracking</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            SHOPEE – SENIOR ALGORITHM ENGINEER
+            Lumitics – Machine Learning Engineer
           </p>
         </div>
 
@@ -80,23 +80,25 @@
             <div class="project-details__desc">
               <h4 class="project-details__content-title">Project Overview</h4>
               <p class="project-details__desc-para">
-                The goal is to recognize the product that is being offered for sale within a video frame or image. This task is particularly challenging because the input image may contain multiple objects resembling products, and the objective is to pinpoint the exact product that is available for purchase.
+                Airlines often carry surplus inflight meals that go to waste after each trip. Our solution identifies and provides statistics on this food waste, enabling informed decisions to reduce waste and enhance the profitability of inflight catering services.
               </p>
               <h4 class="project-details__content-title">Solution</h4>
               <p class="project-details__desc-para">
-                Implement a genenic product detector to locate all objects resembling products within the image. 
-                Subsequently, employ these detection patches for conducting similarity matching with distinctive product attributes such as the title and cover image to identify the product on sale.
+                Given an image, detect and count different type of inflight meals using object detection models and provide statistics based on these model results.
+              </p>
+              <h4 class="project-details__content-title">Clientele</h4>
+              <p class="project-details__desc-para">
+                SIA, Ethihad, etc.
               </p>
               <h4 class="project-details__content-title">Work summary</h4>
               <ul class="project-details__desc-para">
-                <li>Developed and experimented with a generic product detector using YoloX model.</li>
-                <li>Developed a similarity matching model to identify the product-on-sale included in the video frames.</li>
-                <li>Performed data analytics and developed rule-based post-processing logics to improve results.</li>
-                <li>Explored the possibility of text-guided object detection (owlvit) to improve the precision of the detector.</li>
-                <li>Labelling SOPs and datasets preparation for data labelling tasks.</li>
-                <li>Concurrent parameter finetuning using Hyperopt for the post-processing logics.</li>
-                <li>Resource and timeline planning and setting up KPIs for quarterly model improvements.</li>
-                <li>Model deployment and model serving provide 200qps response rate.</li>
+                <li>Implement train/test data pipelines using tf.data and TFRecord.</li>
+                <li>Implement Haze removal technique to preprocess images.</li>
+                <li>Evaluation of STOA feature extractors with respect to speed and accuracy.</li>
+                <li>Implement the object detection solution in TensorFlow and integrated rule-based post processing to provide metadata for analytics.</li>
+                <li>Work with the customer success team to verify the model accuracies for each class.</li>
+                <li>Implement the inference pipeline which downloads the data from GCP by referring to the respective database tables, then perform the inference and update the results back to the database.</li>
+                <li>Deploy the system on GCP with the help of Docker.</li>
               </ul>
               
             </div>
@@ -104,25 +106,24 @@
             <div class="project-details__tools-used">
               <h4 class="project-details__content-title">Tools</h4>
               <div class="skills">
-                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">TensorFlow</div>
                 <div class="skills__skill">OpenCV</div>
                 <div class="skills__skill">Docker</div>
-                <div class="skills__skill">AWS</div>
-                <div class="skills__skill">Hadoop</div>
-                <div class="skills__skill">pyspark</div>
+                <div class="skills__skill">GCP</div>
+                <div class="skills__skill">HDF5</div>
+                <div class="skills__skill">SlackAPI</div>
                 <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Hyperopt</div>
               </div>
             </div>
 
             <div class="project-details__ML-used">
               <h4 class="project-details__content-title">ML approaches</h4>
               <div class="skills">
-                <div class="skills__skill">YoloX</div>
-                <div class="skills__skill">Metric learning</div>
-                <div class="skills__skill">Swin Transformer</div>
-                <div class="skills__skill">Post processing logics</div>
-                <div class="skills__skill">Text guided object detection (OWL-ViT)</div>
+                <div class="skills__skill">Object detection</div>
+                <div class="skills__skill">Classification</div>
+                <div class="skills__skill">Image processing</div>
+                <div class="skills__skill">Online/Offline evaluation</div>
               </div>
             </div>
             

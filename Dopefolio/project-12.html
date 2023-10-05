@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Shopee video product detector</title>
+    <title>Analysis of Twitter Bots</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <span href="../index.html" class="header__logo-sub">Lahiru Jayasinghe</span>
+          <span class="header__logo-sub">Lahiru Jayasinghe</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -63,10 +63,10 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Shopee video product detector</h1>
+        <h1 class="heading-primary">Analysis of Twitter Bots</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            SHOPEE – SENIOR ALGORITHM ENGINEER
+            SUTD-MIT INTERNATIONAL DESIGN CENTRE – RESEARCH ENGINER
           </p>
         </div>
 
@@ -80,23 +80,20 @@
             <div class="project-details__desc">
               <h4 class="project-details__content-title">Project Overview</h4>
               <p class="project-details__desc-para">
-                The goal is to recognize the product that is being offered for sale within a video frame or image. This task is particularly challenging because the input image may contain multiple objects resembling products, and the objective is to pinpoint the exact product that is available for purchase.
+                Detect twitter bots and classify them into spam/traditional/social bots by implementing a model using labeled dataset and use it to analyze unlabeled dataset
               </p>
-              <h4 class="project-details__content-title">Solution</h4>
+              <h4 class="project-details__content-title">Data</h4>
               <p class="project-details__desc-para">
-                Implement a genenic product detector to locate all objects resembling products within the image. 
-                Subsequently, employ these detection patches for conducting similarity matching with distinctive product attributes such as the title and cover image to identify the product on sale.
+                The labeled dataset was an aggregated dataset having ~20 million tweets from different data sources. The unlabeled dataset is collected from 2020 twitter competition having ~160 million tweets and ~50GB large
               </p>
               <h4 class="project-details__content-title">Work summary</h4>
               <ul class="project-details__desc-para">
-                <li>Developed and experimented with a generic product detector using YoloX model.</li>
-                <li>Developed a similarity matching model to identify the product-on-sale included in the video frames.</li>
-                <li>Performed data analytics and developed rule-based post-processing logics to improve results.</li>
-                <li>Explored the possibility of text-guided object detection (owlvit) to improve the precision of the detector.</li>
-                <li>Labelling SOPs and datasets preparation for data labelling tasks.</li>
-                <li>Concurrent parameter finetuning using Hyperopt for the post-processing logics.</li>
-                <li>Resource and timeline planning and setting up KPIs for quarterly model improvements.</li>
-                <li>Model deployment and model serving provide 200qps response rate.</li>
+                <li>Conduct project planning and literature reading to understand SOTA approaches for Twitter bot detection.</li>
+                <li>Implement data aggregation, data cleaning, data structure conversions (associative arrays), data storing using Scala/Spark and Json file stores.</li>
+                <li>Implement tweet similarity features using MinHash with LSH and many more tweet and user profile-related features in Scala.</li>
+                <li>Implement SVM, XGBoost, Random Forest, Decision trees, Logistic Regression, and MLP models using PySpark ML library on Databrick clusters on Azure.</li>
+                <li>Perform hyperparameter tuning with Cross-validation to select the best model to perform data analysis on unlabeled data.</li>
+                <li>Perform data and analysis using statistical information, PCA, kmeans, and network (graph) visualization on unlabeled data.</li>
               </ul>
               
             </div>
@@ -104,25 +101,25 @@
             <div class="project-details__tools-used">
               <h4 class="project-details__content-title">Tools</h4>
               <div class="skills">
-                <div class="skills__skill">Pytorch</div>
-                <div class="skills__skill">OpenCV</div>
-                <div class="skills__skill">Docker</div>
-                <div class="skills__skill">AWS</div>
-                <div class="skills__skill">Hadoop</div>
-                <div class="skills__skill">pyspark</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Hyperopt</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">PySpark</div>
+                <div class="skills__skill">Scala</div>
+                <div class="skills__skill">Spark</div>
+                <div class="skills__skill">Microsoft Azure</div>
               </div>
             </div>
 
             <div class="project-details__ML-used">
               <h4 class="project-details__content-title">ML approaches</h4>
               <div class="skills">
-                <div class="skills__skill">YoloX</div>
-                <div class="skills__skill">Metric learning</div>
-                <div class="skills__skill">Swin Transformer</div>
-                <div class="skills__skill">Post processing logics</div>
-                <div class="skills__skill">Text guided object detection (OWL-ViT)</div>
+                <div class="skills__skill">SVM</div>
+                <div class="skills__skill">XGBoost</div>
+                <div class="skills__skill">Random Forest</div>
+                <div class="skills__skill">Decision trees</div>
+                <div class="skills__skill">Logistic Regression</div>
+                <div class="skills__skill">Feature engineering</div>
+                <div class="skills__skill">Kmeans</div>
+                <div class="skills__skill">MinHash/LSH</div>
               </div>
             </div>
             

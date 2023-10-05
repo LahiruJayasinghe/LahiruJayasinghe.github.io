@@ -25,16 +25,16 @@
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="../index.html" class="header__link"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="../index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">Projects</a>
+              <a href="../index.html#projects" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="../index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
         </div>
@@ -43,19 +43,19 @@
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="../index.html"> Home </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="../index.html#about"> About </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="../index.html#projects"> Projects </a>
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="../index.html#contact"> Contact </a>
             </li>
           </ul>
         </div>
@@ -75,126 +75,68 @@
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-          </div>
+
           <div class="project-details__content-main">
             <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <h4 class="project-details__content-title">Project Overview</h4>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                This project is linked to Shopee's Product Video Summarization product line. The main goal is to assess the quality of generated summary videos from lengthy seller-uploaded videos, determining their suitability for online deployment. 
+                Additionally, an essential control mechanism is required to maintain video quality throughout the summarization process.
+              </p>
+              <h4 class="project-details__content-title">Solution</h4>
+              <p class="project-details__desc-para">
+                Create models for predicting image and video quality, which will play a crucial role in evaluating both visual quality and product attractiveness. 
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                These models will serve as rankers and filters within the system, ensuring that the most visually appealing and product-relevant content is prioritized.
               </p>
+              <h4 class="project-details__content-title">Work summary</h4>
+                <ol class="project-details__desc-para">
+                  <li>Designed the quality control system for the PVA product line, including the development and deployment of its associated models.</li>
+                  <li>Developed and experimented video quality evaluation models using TDN, ViT, and FASTVQA.</li>
+                  <li>Developed and experimented image quality evaluation models using koncept512 and hyperIQA.</li>
+                  <li>Researched on utilizing random forest, xgboost, and EBM to make use of image-level features such as brightness, contrast, sharpness, etc. to predict video-level and image-level quality.</li>
+                  <li>Prepared labeling SOPs and datasets for data labeling teams to get proper labels for model training.</li>
+                  <li>Conducted data analysis tasks and case studies to understand data and results.</li>
+                  <li>Conducted rigorous experiments to train models with high-class imbalance datasets.</li>
+                  <li>Resource and timeline planning and setting up KPIs for quarterly model improvements.</li>
+                  <li>Model deployment with Docker and in-house model serving and monitoring tools.</li>
+                </ol>
             </div>
+
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h4 class="project-details__content-title">Tools</h4>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
+                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">OpenCV</div>
+                <div class="skills__skill">Docker</div>
+                <div class="skills__skill">AWS</div>
+                <div class="skills__skill">Hadoop</div>
+                <div class="skills__skill">pyspark</div>
                 <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
               </div>
             </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+
+            <div class="project-details__ML-used">
+              <h4 class="project-details__content-title">ML approaches</h4>
+              <div class="skills">
+                <div class="skills__skill">Spatial temporal difference networks (TDN)</div>
+                <div class="skills__skill">VideoMAE</div>
+                <div class="skills__skill">ViT</div>
+                <div class="skills__skill">long tail learning</div>
+                <div class="skills__skill">SSIM</div>
+                <div class="skills__skill">pyspark</div>
+                <div class="skills__skill">random forest</div>
+                <div class="skills__skill">xgboost</div>
+                <div class="skills__skill">Non-reference image quality assessment</div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
-      </div>
-    </footer>
+    
     <script src="./index.js"></script>
   </body>
 </html>
